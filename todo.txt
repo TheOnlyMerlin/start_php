@@ -8,6 +8,12 @@ General
 		-Add general support for Netbeans
 		-Add general support for SVN
 
+Forks Wanted:
+(making these forks will likely inform development on this template)
+	-CakePHP project starter
+	-Symfony project starter
+	-Drupal 8 Project Starter
+		
 vagrantfile:
 	Blockers:
 		-Add current folder to vagrant instance.  
@@ -19,7 +25,8 @@ vagrantfile:
 		-Add digital ocean support
 	Backlog:
 		-Add ec2 support
-public_html folder
+
+public_html folder:
 	Blockers:
 		-
 	Important:
