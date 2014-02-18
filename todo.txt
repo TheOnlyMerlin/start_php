@@ -1,0 +1,29 @@
+General
+	Blockers:
+		-
+	Important:
+		-Add composer support
+			-Add composer items to gitignore as needed
+	Backlog:
+		-Add general support for Netbeans
+		-Add general support for SVN
+
+vagrantfile:
+	Blockers:
+		-Add current folder to vagrant instance.  
+		-Add public_html to web root via symlink
+		-Add dev_html to web root as public_html/dev via symlink
+		-Add another symlink for dev_html to web root as public_html/dev_html to make people-expecting-the-folder-to-be-same name happy
+	Important:
+		-Add puppet support
+		-Add digital ocean support
+	Backlog:
+		-Add ec2 support
+public_html folder
+	Blockers:
+		-
+	Important:
+		-Add composer support
+			-Add composer items to git ignore as needed
+	Backlog:
+		-
