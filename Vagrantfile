@@ -4,6 +4,10 @@
 # Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
 VAGRANTFILE_API_VERSION = "2"
 
+# Control Variables
+CONFIG_DIR = "/conf"  # Directory of general configuration files
+
+#Main Configuration
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # All Vagrant configuration is done here. The most common configuration
   # options are documented and commented below. For a complete reference,
@@ -54,6 +58,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   #
   # View the documentation for the provider you're using for more
   # information on available options.
+  
+  # Shell Provisioning
+  config.vm.provision :shell, :path => "#{CONFIG_DIR}/#{project}/App.config"bootstrap.sh"
 
   # Enable provisioning with Puppet stand alone.  Puppet manifests
   # are contained in a directory path relative to this Vagrantfile.
