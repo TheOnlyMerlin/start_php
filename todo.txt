@@ -34,3 +34,10 @@ public_html folder:
 			-Add composer items to git ignore as needed
 	Backlog:
 		-
+
+********************* ROADMAP ************************
+	-Support easy development or production server startup
+
+********************** IDEAS *************************
+	-Support many different server applications.  IE, if I wanted to be able to instantly spin up a gaming server on digital ocean or EC2, that would be an awesome, expanded use of this rough idea.  (Maybe new project?)
+	
