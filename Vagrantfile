@@ -5,7 +5,8 @@
 VAGRANTFILE_API_VERSION = "2"
 
 # Control Variables
-CONFIG_DIR = "/conf"  # Directory of general configuration files
+BASE_DIR = Dir.pwd    # project's base directory
+CONFIG_DIR = BASE_DIR + "/conf"  # Directory of general configuration files
 
 #Main Configuration
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
@@ -60,6 +61,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # information on available options.
   
   # Shell Provisioning
+  config.vm.provision "shell",
+    inline: "echo Attempting to load the bootstrap from " + Dir.pwd
   config.vm.provision :shell, :path => "#{CONFIG_DIR}/bootstrap.sh"
 
   # Enable provisioning with Puppet stand alone.  Puppet manifests
