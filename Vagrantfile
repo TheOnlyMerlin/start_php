@@ -60,7 +60,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # information on available options.
   
   # Shell Provisioning
-  config.vm.provision :shell, :path => "#{CONFIG_DIR}/#{project}/App.config"bootstrap.sh"
+  config.vm.provision :shell, :path => "#{CONFIG_DIR}/bootstrap.sh"
 
   # Enable provisioning with Puppet stand alone.  Puppet manifests
   # are contained in a directory path relative to this Vagrantfile.
